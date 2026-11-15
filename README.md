@@ -45,27 +45,30 @@ F:\VS\hamer\
 └───Views         # XAML-разметка окон и пользовательских элементов (Auth, Public, Workspace)
 ```
 🚀 Инструкция по развертыванию и запуску
-1. Требования
-Установленный .NET 10.0 SDK (или выше)
+### 1. Требования
+<u>Установленный</u> [.NET 10.0 SDK](https://dotnet.microsoft.com/ru-ru/download/dotnet/thank-you/sdk-10.0.404-windows-x64-installer) (или выше)
 
-Visual Studio 2022 / VS Code с поддержкой разработки под WPF и .NET
+[Visual Studio 2022](https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=Community&channel=Release&Version=VS2022&source=VSLandingPage&add=Microsoft.VisualStudio.Workload.CoreEditor&add=Microsoft.VisualStudio.Workload.NetCrossPlat;includeRecommended&cid=2305) / [VS Code](https://code.visualstudio.com/thank-you?dv=win&build=stable) с поддержкой разработки под WPF и .NET
 
-2. Клонирование репозитория
-Bash
-git clone [https://github.com/username/hamer.git](https://github.com/username/hamer.git)
-cd hamer
-3. Настройка базы данных
+### 2. Клонирование репозитория
+```bash
+git clone [https://github.com/hamer-ru/project.git](https://github.com/hamer-ru/project.git)
+cd project/desktop
+```
+
+### 3. Настройка базы данных
 Строка подключения настраивается в файле appsettings.json.
 
 При первом запуске приложение автоматически инициализирует локальную базу данных (SQLite / MS SQL Server) и заполняет её тестовыми данными из сидеров.
 
-4. Сборка и запуск приложения
+### 4. Сборка и запуск приложения
 Через терминал (из папки с проектом):
 
-Bash
+```Bash
 dotnet build
 dotnet run --project HamerApp.csproj
-Или откройте HamerApp.csproj в Visual Studio и нажмите клавишу F5.
+```
+*Или откройте HamerApp.csproj в Visual Studio и нажмите клавишу F5.*
 
 📊 База данных и ER-диаграмма
 База данных спроектирована в соответствии с третьей нормальной формой (3НФ) и включает в себя основные сущности: User, Client, Employee, Service, Project, Order, Review, Contact, Vacancy.
@@ -74,15 +77,12 @@ dotnet run --project HamerApp.csproj
 
 Макет ER-диаграммы: Представлен в материалах проекта (er-diagramma.png).
 
-
 ---
-
 # 📊 Структура Презентации PowerPoint (.pptx)
-*(Эту презентацию оформил **Павел Маслов**, опираясь на готовый дизайн из Figma и реальный функционал приложения)*
 
 * **Слайд 1: Титульный**
   * Заголовок: Автоматизация бизнес-процессов компании «HAMER» (Ремонт под ключ).
-  * Авторы: Команда разработки (Кувшинов А., Ротарь Н., Маслов П.).
+  * Авторы: *Кувшинов А., Ротарь Н., Маслов П.*
 * **Слайд 2: Проблема и Цель проекта**
   * Проблема: Ручной учет заявок, сложность контроля смет, этапов работ и прозрачности для клиентов.
   * Цель: Создание комплексной десктоп-системы на WPF с разграничением прав доступа.
