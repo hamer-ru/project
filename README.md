@@ -44,7 +44,8 @@ F:\VS\hamer\
 ├───ViewModels    # ViewModel (логика Auth, Main, PublicPages, Workspace)
 └───Views         # XAML-разметка окон и пользовательских элементов (Auth, Public, Workspace)
 ```
-🚀 Инструкция по развертыванию и запуску
+## 🚀 Инструкция по развертыванию и запуску
+
 ### 1. Требования
 <u>Установленный</u> [.NET 10.0 SDK](https://dotnet.microsoft.com/ru-ru/download/dotnet/thank-you/sdk-10.0.404-windows-x64-installer) (или выше)
 
